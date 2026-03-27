@@ -1,0 +1,12 @@
+raw_paths:
+  airlines: /data/raw/airlines
+  airports: /data/raw/airports
+  routes: /data/raw/routes
+
+curated_paths:
+  airlines: /data/parquet/airlines
+  airports: /data/parquet/airports
+  routes: /data/parquet/routes
+
+analytics_paths:
+  aggregations: /data/aggregations

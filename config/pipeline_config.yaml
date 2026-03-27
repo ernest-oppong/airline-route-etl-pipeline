@@ -1,0 +1,8 @@
+project_name: airline-route-etl-pipeline
+kafka:
+  bootstrap_servers: localhost:9092
+  topic: aggregations
+hive:
+  database: default
+nifi:
+  hdfs_directory: /data/aggregations

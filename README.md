@@ -42,15 +42,7 @@ This project demonstrates a complete data engineering workflow:
 
 ## 🏗️ Architecture
 
-```mermaid
-flowchart LR
-    A[Local raw files\n airlines.dat, airports.dat, routes.dat] --> B[HDFS raw zone\n /data/raw/...]
-    B --> C[Hive external raw tables]
-    C --> D[Hive Parquet tables]
-    D --> E[Hive aggregation table\n /data/aggregations]
-    E --> F[NiFi flow\n ListHDFS -> FetchParquet -> PublishKafka]
-    F --> G[Kafka topic\n aggregations]
-    G --> H[Kafka consumer / downstream systems]
+![Architecture](screenshots/architecture.png)
 ```
 
 ---
